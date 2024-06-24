@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --defaultColor: #66bb6a;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  border: 2px solid var(--defaultColor);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  caret-color: var(--defaultColor);
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--defaultColor);
+  cursor: pointer;
+  height: 100%;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
