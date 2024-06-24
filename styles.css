@@ -52,3 +52,48 @@ form button {
   padding: 5px 10px;
   font-size: 1rem;
 }
+
+section h2 {
+  margin: 0;
+}
+
+section:first-of-type {
+  background-color: #e8f5e9;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  height: 180px
+}
+
+#types {
+  display: inline-flex;
+  gap: 5px;
+}
+
+#type {
+  background-color: var(--defaultColor);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#sprite-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 180px;
+}
+
+#sprite {
+  height: 100%;
+}
+
+section:last-of-type p {
+  border-bottom: 2px solid var(--defaultColor);
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px 20px;
+}
