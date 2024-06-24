@@ -19,7 +19,6 @@ const getPokemon = async idOrName => {
     const url = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${idOrName}`
     const res = await fetch(url)
     const data = await res.json()
-    console.log(data)
     return data
   } catch (error) {
     alert('Pokemon not found')
